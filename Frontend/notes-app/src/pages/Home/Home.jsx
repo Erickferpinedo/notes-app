@@ -115,7 +115,7 @@ const Home = () => {
 
     try {
       const response = await axiosInstance.put("/archive-notes/" + noteId, {
-        isArchived: !noteData.isArchived,
+        isArchived: noteData.isArchived,
       });
 
       if (response.data && response.data.note) {
@@ -188,7 +188,7 @@ const Home = () => {
           setOpenAddEditModal({ isShown: true, type: "add", data: null });
         }}
       >
-        <MdAdd className="text-[32px] text-white" />
+        <MdAdd className="text-[42px] bg-blue-600 text-white" />
       </button>
 
       <Modal

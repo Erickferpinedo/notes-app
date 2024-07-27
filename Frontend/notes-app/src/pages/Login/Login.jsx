@@ -65,7 +65,7 @@ const Login = () => {
             <input
               type="text"
               placeholder="Email"
-              className="input-box"
+              className="input-box w-full text-sm bg-transparent border-[1.5px] px-5 py-3 rounded mb-4 outline-none"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -77,7 +77,10 @@ const Login = () => {
 
             {error && <p className="text-red-500 text-xs pb-1">{error}</p>}
 
-            <button type="submit" className="btn-primary">
+            <button
+              type="submit"
+              className="btn-primary bg-blue-600 w-full text-sm bg-primary text-white p-2 rounded my-1 hover:bg-blue-600"
+            >
               Login
             </button>
 

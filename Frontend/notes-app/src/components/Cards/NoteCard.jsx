@@ -24,7 +24,7 @@ const NoteCard = ({
         </div>
 
         <GoArchive
-          className={`icon-btn ${
+          className={`icon-btn text-xl text-slate-300 cursor-pointer hover:text-blue-600 ${
             isArchived ? "text-primary" : "text-slate-300"
           }`}
           onClick={onArchiveNote}
@@ -40,11 +40,11 @@ const NoteCard = ({
 
         <div className="flex items-center gap-2">
           <MdCreate
-            className="icon-btn hover:text-green-600"
+            className="icon-btn text-xl text-slate-300 cursor-pointer hover:text-primary hover:text-green-600"
             onClick={onEdit}
           />
           <MdDelete
-            className="icon-btn hover:text-red-500"
+            className="icon-btn text-xl text-slate-300 cursor-pointer hover:text-primary hover:text-red-500"
             onClick={onDelete}
           />
         </div>
